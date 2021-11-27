@@ -1,0 +1,52 @@
+Problema04 (miniespecificación -use ciclo haga-hasta)
+Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+Nombre el jugador
+Posición en el campo de juego
+Edad
+Estatura
+El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. Se debe imprimer el siguiente reporte 
+(usar una cadena de acumulación):
+
+Listado de Jugadores
+Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+Ángel Mena -Delantero-, edad 32, estatura 1.75
+Michael Estrada -Delantero-, edad 27, estatura 1.93 
+Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+1.Inicio
+2.nombre;
+3.posicionJuego;
+4.edad, i[0,n]
+5.estatura, d[0,n]
+6.salida, x(10)[{a-z}]
+7.prom_edad, d[0,n]
+8.prom_estatura, d[0,n]
+9.contador = 1;
+10.suma_edad = 0;
+11.suma_estatura = 0;
+12.haga_Hasta
+13.  acumulador = ""
+14.  Escribir "Ingrese el nombre del jugador"//Alexander Dominguez 
+15.  Leer nombre
+16.  Escribir "Ingrese la posición en la que juega"//arquero
+17.  Leer posicionJuego
+18.  Escribir "Ingrese la edad del jugador"//32
+19.  Leer edad
+20.  Escribir "Ingrese la estatura del jugador"//1.95
+21.  Leer estatura
+22.  contador = contador+1//0+1
+23.  sumaEdad = sumaEdad + edad//0+32
+24.  sumaEstatura = sumaEstatura+ estatura//0+1.95
+25.  acumulador = nombre +" - "+ posicion +""+ "," + "" + edad +""+ "," + "" + estatura + \n  
+25.  Escribir "¿Desea salir del proceso? Si su respuesta esa afirmativa escriba si, caso contrario ingrese cualquier letra"
+26.  Leer salida
+27.Fin haga_Hasta (salida!="si")
+28.Leer acumulador
+28.prom_edad = suma_edad/contador
+29.prom_estatura = suma_estatura/contador
+30.Escribir acumulador
+30.Escribir prom_edad
+32.Escribir prom_estatura
+33.Fin

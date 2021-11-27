@@ -1,0 +1,20 @@
+// Generar e imprimir la siguiente serie:
++1/1-1/3+1/5-1/7+1/9
+
+1. Inicio
+2. numerador, i[0,n] = 1;
+3. denominador, i[0,n] = 1;
+4. limite, i[0,n] = 10;
+7. cadena
+8. signo
+9. Mientras ( denominador <= limite) haga
+10. 	Si((denominador = 3 ) || (denominador = 7 )) entonces
+11.     simbolo -> -
+12.     Caso contrario
+13.    simbolo -> + 
+14.  Fin si
+15.  cadena_final = "signo" + numerador + "/" + denominador
+16.  denominador <-- denominador + 2
+17.  Escribir cadena
+18.  Fin Mientras
+19. Fin
